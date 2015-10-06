@@ -5,5 +5,6 @@ Given an URL 'http://pgs-soft.com'
   And a description 'this is a company I work for'
  When Editor 'tpluskiewicz' adds a Link on behalf of Submitter 'wmalara'
  Then Link must have been submitted 
-	#| SubmitterId | URL                 | Description                  |
-	#| wmalara     | http://pgs-soft.com | this is a company I work for |
+  And submitted Link contains data
+	| SubmitterId | Url                 | Description                  |
+	| wmalara     | http://pgs-soft.com | this is a company I work for |

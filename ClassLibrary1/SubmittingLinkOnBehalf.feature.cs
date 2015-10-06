@@ -80,6 +80,17 @@ testRunner.Given("an URL \'http://pgs-soft.com\'", ((string)(null)), ((TechTalk.
 #line 7
  testRunner.Then("Link must have been submitted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "SubmitterId",
+                        "Url",
+                        "Description"});
+            table1.AddRow(new string[] {
+                        "wmalara",
+                        "http://pgs-soft.com",
+                        "this is a company I work for"});
+#line 8
+  testRunner.And("submitted Link contains data", ((string)(null)), table1, "And ");
+#line hidden
             this.ScenarioCleanup();
         }
     }
