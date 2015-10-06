@@ -65,19 +65,23 @@ namespace ClassLibrary1
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Editor sumbits a Link")]
-        public virtual void EditorSumbitsALink()
+        [NUnit.Framework.DescriptionAttribute("Submitter sumbits a Link")]
+        [NUnit.Framework.TestCaseAttribute("http://pgs-soft.com", "this is a company I work for", "wmalara", null)]
+        [NUnit.Framework.TestCaseAttribute("http://pgs-soft.com", "", "wmalara", null)]
+        public virtual void SubmitterSumbitsALink(string uRL, string description, string submitterId, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Editor sumbits a Link", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Submitter sumbits a Link", exampleTags);
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
-testRunner.Given("an URL \'http://pgs-soft.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given(string.Format("an URL \'{0}\'", uRL), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 5
-  testRunner.And("a description \'this is a company I work for\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And(string.Format("a description \'{0}\'", description), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 6
- testRunner.When("Editor \'tpluskiewicz\' adds a Link on behalf of Submitter \'wmalara\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And(string.Format("Submitter is \'{0}\'", submitterId), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 7
+ testRunner.When("Submitter submits a Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 8
  testRunner.Then("Link must have been submitted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -85,10 +89,10 @@ testRunner.Given("an URL \'http://pgs-soft.com\'", ((string)(null)), ((TechTalk.
                         "Url",
                         "Description"});
             table1.AddRow(new string[] {
-                        "wmalara",
-                        "http://pgs-soft.com",
-                        "this is a company I work for"});
-#line 8
+                        string.Format("{0}", submitterId),
+                        string.Format("{0}", uRL),
+                        string.Format("{0}", description)});
+#line 9
   testRunner.And("submitted Link contains data", ((string)(null)), table1, "And ");
 #line hidden
             this.ScenarioCleanup();

@@ -11,6 +11,7 @@ namespace ClassLibrary1
     {
         private string linkUrl;
         private string linkDescritpion;
+        private SubmitterId submitterId;
 
         [Given(@"an URL '(.*)'")]
         public void GivenAnURL(string url)
@@ -23,11 +24,17 @@ namespace ClassLibrary1
         {
             linkDescritpion = description;
         }
-        
-        [When(@"Editor '(.*)' adds a Link on behalf of Submitter '(.*)'")]
-        public void WhenEditorAddsALinkOnBehalfOfSubmitter(string editorId, string submitterId)
+
+        [Given(@"Submitter is '(.*)'")]
+        public void GivenSubmitterIs(string submitterId)
         {
-            var linkSubmitted = new LinkSubmitted(new Uri(linkUrl), linkDescritpion, new SubmitterId(submitterId));
+            this.submitterId = new SubmitterId(submitterId);
+        }
+
+        [When(@"Submitter submits a Link")]
+        public void WhenEditorAddsALinkOnBehalfOfSubmitter()
+        {
+            var linkSubmitted = new LinkSubmitted(new Uri(linkUrl), linkDescritpion, submitterId);
             ScenarioContext.Current.Set(linkSubmitted);
         }
 
