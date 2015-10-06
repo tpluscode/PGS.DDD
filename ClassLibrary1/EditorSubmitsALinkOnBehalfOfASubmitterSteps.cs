@@ -57,6 +57,16 @@ namespace ClassLibrary1
             Assert.That(actualOutput.SubmitterId, Is.EqualTo(expectedOutput.SubmitterId));
             Assert.That(actualOutput.Description, Is.EqualTo(expectedOutput.Description));
         }
+
+        [AfterScenario("DomainErrorOccurs")]
+        public void ThenAnErrorMustOccur()
+        {
+            Assert.That(ScenarioContext.Current.TestError, Is.InstanceOf(typeof(DomainConstraintViolation)));
+        }
+    }
+
+    public class DomainConstraintViolation : Exception
+    {
     }
 
     public class LinkSubmitted

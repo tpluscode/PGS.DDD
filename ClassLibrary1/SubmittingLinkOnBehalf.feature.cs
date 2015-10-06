@@ -65,12 +65,13 @@ namespace ClassLibrary1
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Submitter sumbits a Link")]
+        [NUnit.Framework.DescriptionAttribute("Submitter submits a Link")]
         [NUnit.Framework.TestCaseAttribute("http://pgs-soft.com", "this is a company I work for", "wmalara", null)]
         [NUnit.Framework.TestCaseAttribute("http://pgs-soft.com", "", "wmalara", null)]
-        public virtual void SubmitterSumbitsALink(string uRL, string description, string submitterId, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("https://pgs-soft.com", "", "wmalara", null)]
+        public virtual void SubmitterSubmitsALink(string uRL, string description, string submitterId, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Submitter sumbits a Link", exampleTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Submitter submits a Link", exampleTags);
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
@@ -94,6 +95,41 @@ testRunner.Given(string.Format("an URL \'{0}\'", uRL), ((string)(null)), ((TechT
                         string.Format("{0}", description)});
 #line 9
   testRunner.And("submitted Link contains data", ((string)(null)), table1, "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Submitter submits a Link with invalid URL")]
+        [NUnit.Framework.CategoryAttribute("DomainErrorOccurs")]
+        [NUnit.Framework.TestCaseAttribute("localhost", null)]
+        [NUnit.Framework.TestCaseAttribute("pgs-soft.com", null)]
+        [NUnit.Framework.TestCaseAttribute("http://localhost", null)]
+        [NUnit.Framework.TestCaseAttribute("http://tpluskiewicz", null)]
+        [NUnit.Framework.TestCaseAttribute("ssh://www.pgs-soft.com/git", null)]
+        [NUnit.Framework.TestCaseAttribute("ftp://wcss.wroc.pl", null)]
+        [NUnit.Framework.TestCaseAttribute("urn:isbn:123456789", null)]
+        [NUnit.Framework.TestCaseAttribute("gg:123456789", null)]
+        [NUnit.Framework.TestCaseAttribute("arbitrary text", null)]
+        [NUnit.Framework.TestCaseAttribute("https://pgs soft.com", null)]
+        [NUnit.Framework.TestCaseAttribute("http://pgs_soft.com", null)]
+        public virtual void SubmitterSubmitsALinkWithInvalidURL(string uRL, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "DomainErrorOccurs"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Submitter submits a Link with invalid URL", @__tags);
+#line 19
+this.ScenarioSetup(scenarioInfo);
+#line 20
+testRunner.Given(string.Format("an URL \'{0}\'", uRL), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 21
+  testRunner.And("Submitter is \'wmalara\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 22
+ testRunner.When("Submitter submits a Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
         }
