@@ -7,6 +7,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "wykop.pgs-soft.com", "src\w
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PGS.Wykop.Api", "src\PGS.Wykop.Api\PGS.Wykop.Api.xproj", "{0A7DF3D1-4EBE-4CD2-B06D-B60F62AB628F}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PGS.Wykop.Tests", "src\PGS.Wykop.Tests\PGS.Wykop.Tests.xproj", "{6E456E25-2971-46B9-8A54-4B938145BABF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0A7DF3D1-4EBE-4CD2-B06D-B60F62AB628F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A7DF3D1-4EBE-4CD2-B06D-B60F62AB628F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A7DF3D1-4EBE-4CD2-B06D-B60F62AB628F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E456E25-2971-46B9-8A54-4B938145BABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E456E25-2971-46B9-8A54-4B938145BABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E456E25-2971-46B9-8A54-4B938145BABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E456E25-2971-46B9-8A54-4B938145BABF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
