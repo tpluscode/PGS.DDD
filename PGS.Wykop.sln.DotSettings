@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=50FC3AA06317FD40A68571DE78B6B428/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=50FC3AA06317FD40A68571DE78B6B428/Color/@EntryValue">WindowText</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=50FC3AA06317FD40A68571DE78B6B428/MatchComments/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=50FC3AA06317FD40A68571DE78B6B428/Name/@EntryValue">Notes</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=50FC3AA06317FD40A68571DE78B6B428/Pattern/@EntryValue">note</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=50FC3AA06317FD40A68571DE78B6B428/TodoIconStyle/@EntryValue">Normal</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=73A25D4CD6C67544A7F25A2EAED70EAC/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=73A25D4CD6C67544A7F25A2EAED70EAC/Color/@EntryValue">WindowText</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=73A25D4CD6C67544A7F25A2EAED70EAC/MatchComments/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=73A25D4CD6C67544A7F25A2EAED70EAC/Name/@EntryValue">Proposal</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=73A25D4CD6C67544A7F25A2EAED70EAC/Pattern/@EntryValue">propose</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=73A25D4CD6C67544A7F25A2EAED70EAC/TodoIconStyle/@EntryValue">Question</s:String></wpf:ResourceDictionary>
