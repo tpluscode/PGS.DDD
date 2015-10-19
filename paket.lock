@@ -1,6 +1,7 @@
 NUGET
   remote: https://nuget.org/api/v2
   specs:
+    FakeItEasy (1.25.3)
     ImpromptuInterface (6.2.2)
     NUnit (2.6.4)
     SpecFlow (1.9.0)
