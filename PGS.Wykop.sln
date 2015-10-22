@@ -25,7 +25,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PGS.Wykop.Data.EventSourced
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PGS.Wykop.Application", "src\PGS.Wykop.ApplicationService\PGS.Wykop.Application.xproj", "{A37E0D8F-0D7D-41F4-B0CE-AE473815384A}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PGS.Wykop.Infrastructure.ServiceBus", "src\PGS.Wykop.Infrastructure.ServiceBus\PGS.Wykop.Infrastructure.ServiceBus.xproj", "{41CA5F47-4F1E-4AA6-9E59-FC2045E3E9EB}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PGS.Wykop.ServiceBus", "src\PGS.Wykop.Infrastructure.ServiceBus\PGS.Wykop.ServiceBus.xproj", "{41CA5F47-4F1E-4AA6-9E59-FC2045E3E9EB}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PGS.Wykop.ReadModel.WeeksLinks", "src\PGS.Wykop.ReadModel.WeeksLinks\PGS.Wykop.ReadModel.WeeksLinks.xproj", "{2C28E11A-42F6-40A9-A571-630805ABFCE1}"
 EndProject
