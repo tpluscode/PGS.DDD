@@ -1,6 +1,7 @@
 source https://www.nuget.org/api/v2/
 
 nuget FakeItEasy
+nuget FluentAssertions
 nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform
 nuget Microsoft.Owin.Host.SystemWeb
 nuget Nancy.Owin
