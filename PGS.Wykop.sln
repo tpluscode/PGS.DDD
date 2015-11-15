@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.Wykop.Application.Links
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.DDD.Domain", "src\PGS.DDD.Domain\PGS.DDD.Domain.csproj", "{049DC5F0-737D-47FD-92D7-3F2A62F22BB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.DDD.Application", "src\PGS.DDD.Application\PGS.DDD.Application.csproj", "{8E9C304C-A21A-455B-8A2A-B41A2BE63AB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{049DC5F0-737D-47FD-92D7-3F2A62F22BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{049DC5F0-737D-47FD-92D7-3F2A62F22BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{049DC5F0-737D-47FD-92D7-3F2A62F22BB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E9C304C-A21A-455B-8A2A-B41A2BE63AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E9C304C-A21A-455B-8A2A-B41A2BE63AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E9C304C-A21A-455B-8A2A-B41A2BE63AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E9C304C-A21A-455B-8A2A-B41A2BE63AB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
