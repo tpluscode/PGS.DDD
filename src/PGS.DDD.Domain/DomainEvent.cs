@@ -14,4 +14,9 @@ namespace PGS.DDD.Domain
             Date = DateTime.Now;
         }
     }
+
+    public interface IId
+    {
+        string ToUniqueString();
+    }
 }
