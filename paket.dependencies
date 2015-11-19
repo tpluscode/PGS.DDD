@@ -7,5 +7,6 @@ nuget Microsoft.Owin.Host.SystemWeb
 nuget Nancy.Owin
 nuget Nancy.Validation.DataAnnotations
 nuget NEventStore
+nuget NodaTime
 nuget SpecFlow.NUnit
 nuget ImpromptuInterface
