@@ -1,10 +1,6 @@
-﻿using System.Collections.Generic;
-using PGS.DDD.Domain;
-
-namespace PGS.DDD.Application
+﻿namespace PGS.DDD.Application
 {
-    public interface IServiceBus
+    public interface IServiceBus : IEventPublisher, IEventHandler
     {
-        void Publish(IReadOnlyCollection<DomainEvent> messages);
     }
 }
