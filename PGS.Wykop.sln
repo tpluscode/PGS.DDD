@@ -31,8 +31,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.Wykop.Data.NEventStore"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data.wykop.pgs-soft.com", "src\data.wykop.pgs-soft.com\data.wykop.pgs-soft.com.csproj", "{E8328806-A387-4B60-A86A-15D6EE7A170A}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "wykop.pgs-soft.com", "src\wykop.pgs-soft.com\wykop.pgs-soft.com.xproj", "{52310EDE-4DB2-40E3-99CA-8406AEAE995B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,10 +81,6 @@ Global
 		{E8328806-A387-4B60-A86A-15D6EE7A170A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8328806-A387-4B60-A86A-15D6EE7A170A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8328806-A387-4B60-A86A-15D6EE7A170A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52310EDE-4DB2-40E3-99CA-8406AEAE995B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52310EDE-4DB2-40E3-99CA-8406AEAE995B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52310EDE-4DB2-40E3-99CA-8406AEAE995B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52310EDE-4DB2-40E3-99CA-8406AEAE995B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
