@@ -5,6 +5,7 @@ nuget FluentAssertions
 nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform
 nuget Microsoft.Owin.Host.SystemWeb
 nuget Nancy.Owin
+nuget Nancy.Testing
 nuget Nancy.Validation.DataAnnotations
 nuget NEventStore
 nuget NodaTime
