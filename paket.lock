@@ -2,6 +2,7 @@ NUGET
   remote: https://www.nuget.org/api/v2
   specs:
     CsQuery (1.3.4)
+    EntityFramework (6.1.3)
     FakeItEasy (1.25.3)
     FluentAssertions (4.0.1)
       System.Collections (>= 4.0.10) - framework: dnxcore50

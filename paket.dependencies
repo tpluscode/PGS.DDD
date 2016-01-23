@@ -1,5 +1,6 @@
 source https://www.nuget.org/api/v2/
 
+nuget EntityFramework
 nuget FakeItEasy
 nuget FluentAssertions
 nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform
