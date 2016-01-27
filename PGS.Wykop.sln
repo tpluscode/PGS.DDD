@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{95D27C99-3D84-4ED4-B21A-371395EA047D}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.DDD.ServiceBus", "src\P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.Wykop.Domain", "src\PGS.Wykop.Domain\PGS.Wykop.Domain.csproj", "{296C4D76-2C22-4D60-A74A-1B5370667EE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.Wykop.Data.EventSourced", "src\PGS.Wykop.Data.EventSourced\PGS.Wykop.Data.EventSourced.csproj", "{59DC6066-1197-43E3-8CB8-22F7B8510C6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.DDD.Data.EventSourced", "src\PGS.Wykop.Data.EventSourced\PGS.DDD.Data.EventSourced.csproj", "{59DC6066-1197-43E3-8CB8-22F7B8510C6A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.Wykop.ReadModel.WeeksLinks", "src\PGS.Wykop.ReadModel.WeeksLinks\PGS.Wykop.ReadModel.WeeksLinks.csproj", "{E9E75292-B6F9-49A3-945A-97A3F464942C}"
 EndProject
@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.DDD.Domain", "src\PGS.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.DDD.Application", "src\PGS.DDD.Application\PGS.DDD.Application.csproj", "{8E9C304C-A21A-455B-8A2A-B41A2BE63AB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.Wykop.Data.NEventStore", "src\PGS.Wykop.Data.NEventStore\PGS.Wykop.Data.NEventStore.csproj", "{F785B8EA-CC79-4101-A63F-5228F49A98A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGS.DDD.Data.NEventStore", "src\PGS.Wykop.Data.NEventStore\PGS.DDD.Data.NEventStore.csproj", "{F785B8EA-CC79-4101-A63F-5228F49A98A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data.wykop.pgs-soft.com", "src\data.wykop.pgs-soft.com\data.wykop.pgs-soft.com.csproj", "{E8328806-A387-4B60-A86A-15D6EE7A170A}"
 EndProject
