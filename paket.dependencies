@@ -6,6 +6,8 @@ nuget FakeItEasy
 nuget FluentAssertions
 nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform
 nuget Microsoft.Owin.Host.SystemWeb
+nuget Nancy
+nuget Nancy.Authentication.Basic
 nuget Nancy.Owin
 nuget Nancy.Testing
 nuget Nancy.Validation.DataAnnotations

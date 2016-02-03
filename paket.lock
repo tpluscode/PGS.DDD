@@ -1,5 +1,5 @@
 NUGET
-  remote: https://nuget.org/api/v2
+  remote: https://www.nuget.org/api/v2
   specs:
     AnotherFakeDbSet (4.0.0)
       EntityFramework (>= 6.1.2)
@@ -33,6 +33,8 @@ NUGET
       Microsoft.Owin (>= 3.0.1)
       Owin (>= 1.0)
     Nancy (1.3.0)
+    Nancy.Authentication.Basic (1.3.0)
+      Nancy (>= 1.3.0)
     Nancy.Owin (1.3.0)
       Nancy (>= 1.3.0)
       Owin (>= 1.0)
