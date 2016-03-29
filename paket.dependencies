@@ -7,3 +7,4 @@ nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform
 nuget NEventStore
 nuget NodaTime
 nuget ImpromptuInterface
+nuget GitVersionTask

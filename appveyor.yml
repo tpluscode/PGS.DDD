@@ -1,0 +1,21 @@
+install:
+  - choco install gitversion.portable -pre -y
+  
+before_build:  
+  - .paket\paket.bootstrapper.exe prerelease
+  - .paket\paket.exe restore
+  - ps: gitversion /l console /output buildserver
+
+build:
+  project: PGS.DDD.sln
+
+configuration: Release
+
+after_build:
+  - .paket\paket.exe pack output nugets include-referenced-projects version %GitVersion_NuGetVersion%
+
+artifacts:
+  - path: 'nugets\*.nupkg'
+
+cache:
+  - packages -> paket.lock
