@@ -1,8 +1,6 @@
-SpecFlow.NUnit
 ImpromptuInterface
 FakeItEasy
 FluentAssertions
 NodaTime
-Nancy.Testing
 EntityFramework
 AnotherFakeDbSet
