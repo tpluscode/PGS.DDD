@@ -1,5 +1,7 @@
 source https://www.nuget.org/api/v2/
 
+content: none
+
 nuget AnotherFakeDbSet
 nuget FakeItEasy
 nuget FluentAssertions
@@ -9,3 +11,4 @@ nuget NodaTime
 nuget ImpromptuInterface
 nuget GitVersionTask
 nuget nunit < 3
+nuget costura.fody
