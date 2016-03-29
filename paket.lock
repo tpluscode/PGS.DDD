@@ -22,6 +22,7 @@ NUGET
       System.Threading (>= 4.0.10) - framework: dnxcore50
       System.Threading.Tasks (>= 4.0.10) - framework: dnxcore50
       System.Xml.XDocument (>= 4.0.10) - framework: dnxcore50
+    GitVersionTask (3.4.1)
     ImpromptuInterface (6.2.2)
     Microsoft.CodeDom.Providers.DotNetCompilerPlatform (1.0.1)
       Microsoft.Net.Compilers (>= 1.0.0)

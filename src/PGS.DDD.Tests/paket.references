@@ -4,3 +4,4 @@ FluentAssertions
 NodaTime
 EntityFramework
 AnotherFakeDbSet
+nunit

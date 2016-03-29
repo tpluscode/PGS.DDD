@@ -1,0 +1,9 @@
+﻿type project
+id PGS.DDD.Data.EventSourced
+include-pdbs true
+excludeddependencies
+  GitVersionTask
+tags
+  ddd eventsourcing eventstore
+copyright 
+  Copyright 2016 PGS Software S.A.
