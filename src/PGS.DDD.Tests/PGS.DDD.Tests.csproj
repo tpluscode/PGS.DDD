@@ -40,44 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DDD\AggregateRootTests.cs" />
-    <Compile Include="DDD\EntityTests.cs" />
-    <Compile Include="DDD\TestPersonAR.cs" />
-    <Compile Include="DomainEntities\Link.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Link.feature</DependentUpon>
-    </Compile>
-    <Compile Include="DomainEntities\LinkSteps.cs" />
-    <Compile Include="Features\SubmittingLinkSteps.cs" />
+    <Compile Include="AggregateRootTests.cs" />
+    <Compile Include="EntityTests.cs" />
+    <Compile Include="TestPersonAR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Features\SubmittingLink.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SubmittingLink.feature</DependentUpon>
-    </Compile>
-    <Compile Include="ReadModels\WeeksLinks.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>WeeksLinks.feature</DependentUpon>
-    </Compile>
-    <Compile Include="ReadModels\WeeksLinksSteps.cs" />
-    <Compile Include="TransformationSteps.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DomainEntities\Link.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Link.feature.cs</LastGenOutput>
-    </None>
     <None Include="paket.references" />
-    <None Include="Features\SubmittingLink.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SubmittingLink.feature.cs</LastGenOutput>
-    </None>
-    <None Include="ReadModels\WeeksLinks.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>WeeksLinks.feature.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -95,18 +64,6 @@
     <ProjectReference Include="..\PGS.DDD.Domain\PGS.DDD.Domain.csproj">
       <Project>{049dc5f0-737d-47fd-92d7-3f2a62f22bb6}</Project>
       <Name>PGS.DDD.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PGS.Wykop.Application.Links\PGS.Wykop.Application.Links.csproj">
-      <Project>{F058E984-EFCD-41B4-BB50-024B49A58AAB}</Project>
-      <Name>PGS.Wykop.Application.Links</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PGS.Wykop.Domain\PGS.Wykop.Domain.csproj">
-      <Project>{296C4D76-2C22-4D60-A74A-1B5370667EE5}</Project>
-      <Name>PGS.Wykop.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PGS.Wykop.ReadModel.WeeksLinks\PGS.Wykop.ReadModel.WeeksLinks.csproj">
-      <Project>{E9E75292-B6F9-49A3-945A-97A3F464942C}</Project>
-      <Name>PGS.Wykop.ReadModel.WeeksLinks</Name>
     </ProjectReference>
     <ProjectReference Include="..\PGS.DDD.ServiceBus\PGS.DDD.ServiceBus.csproj">
       <Project>{375436A7-8E9C-4CEA-AAE7-14A942A95EC0}</Project>

@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using FluentAssertions;
 using NUnit.Framework;
 using PGS.DDD.Domain;
 
-namespace PGS.Wykop.Tests.DDD
+namespace PGS.Wykop.Tests
 {
     [TestFixture]
     public class AggregateRootTests

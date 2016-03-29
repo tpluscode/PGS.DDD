@@ -1,6 +1,6 @@
 ﻿using PGS.DDD.Domain;
 
-namespace PGS.Wykop.Tests.DDD
+namespace PGS.Wykop.Tests
 {
     public class TestPersonAR : AggregateRoot<int>
     {
