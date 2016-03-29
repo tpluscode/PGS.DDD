@@ -8,3 +8,4 @@ nuget NEventStore
 nuget NodaTime
 nuget ImpromptuInterface
 nuget GitVersionTask
+nuget nunit < 3
