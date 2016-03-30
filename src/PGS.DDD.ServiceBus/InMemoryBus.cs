@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using PGS.DDD.Application;
 using PGS.DDD.Domain;
 
-namespace PGS.Wykop.ServiceBus
+namespace PGS.DDD.ServiceBus
 {
     public class InMemoryBus : IServiceBus
     {

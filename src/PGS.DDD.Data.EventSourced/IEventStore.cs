@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using PGS.DDD.Domain;
 
-namespace PGS.Wykop.Data.EventSourced
+namespace PGS.DDD.Data.EventSourced
 {
     public interface IEventStore
     {

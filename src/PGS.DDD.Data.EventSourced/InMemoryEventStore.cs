@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using PGS.DDD.Domain;
 
-namespace PGS.Wykop.Data.EventSourced
+namespace PGS.DDD.Data.EventSourced
 {
     public class InMemoryEventStore : IEventStore
     {

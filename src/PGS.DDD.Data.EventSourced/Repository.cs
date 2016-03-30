@@ -3,7 +3,7 @@ using System.Linq;
 using PGS.DDD.Application;
 using PGS.DDD.Domain;
 
-namespace PGS.Wykop.Data.EventSourced
+namespace PGS.DDD.Data.EventSourced
 {
     public class Repository<T, TId> : IRepository<T, TId> where T : IAggregateRoot, IEntity<TId>
     {

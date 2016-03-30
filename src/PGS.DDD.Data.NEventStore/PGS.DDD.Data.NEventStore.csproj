@@ -7,8 +7,8 @@
     <ProjectGuid>{F785B8EA-CC79-4101-A63F-5228F49A98A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PGS.Wykop.Data.NEventStore</RootNamespace>
-    <AssemblyName>PGS.Wykop.Data.NEventStore</AssemblyName>
+    <RootNamespace>PGS.DDD.Data.NEventStore</RootNamespace>
+    <AssemblyName>PGS.DDD.Data.NEventStore</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

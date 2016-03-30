@@ -7,8 +7,8 @@
     <ProjectGuid>{D8920CCB-3995-433E-8A2C-A977D533C6A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PGS.Wykop.Tests</RootNamespace>
-    <AssemblyName>PGS.Wykop.Tests</AssemblyName>
+    <RootNamespace>PGS.DDD.Tests</RootNamespace>
+    <AssemblyName>PGS.DDD.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

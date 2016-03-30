@@ -7,8 +7,8 @@
     <ProjectGuid>{375436A7-8E9C-4CEA-AAE7-14A942A95EC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PGS.Wykop.ServiceBus</RootNamespace>
-    <AssemblyName>PGS.Wykop.ServiceBus</AssemblyName>
+    <RootNamespace>PGS.DDD.ServiceBus</RootNamespace>
+    <AssemblyName>PGS.DDD.ServiceBus</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

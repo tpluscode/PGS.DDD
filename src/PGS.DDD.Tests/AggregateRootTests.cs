@@ -3,7 +3,7 @@ using FluentAssertions;
 using PGS.DDD.Domain;
 using Xunit;
 
-namespace PGS.Wykop.Tests
+namespace PGS.DDD.Tests
 {
     public class AggregateRootTests
     {

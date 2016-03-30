@@ -7,8 +7,8 @@
     <ProjectGuid>{59DC6066-1197-43E3-8CB8-22F7B8510C6A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PGS.Wykop.Data.EventSourced</RootNamespace>
-    <AssemblyName>PGS.Wykop.Data.EventSourced</AssemblyName>
+    <RootNamespace>PGS.DDD.Data.EventSourced</RootNamespace>
+    <AssemblyName>PGS.DDD.Data.EventSourced</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

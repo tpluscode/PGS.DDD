@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 using NEventStore;
+using PGS.DDD.Data.EventSourced;
 using PGS.DDD.Domain;
-using PGS.Wykop.Data.EventSourced;
 
-namespace PGS.Wykop.Data.NEventStore
+namespace PGS.DDD.Data.NEventStore
 {
     public class EventStoreAdapter : IEventStore
     {
