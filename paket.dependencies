@@ -12,3 +12,4 @@ nuget ImpromptuInterface
 nuget GitVersionTask
 nuget nunit < 3
 nuget costura.fody
+nuget OpenCover
