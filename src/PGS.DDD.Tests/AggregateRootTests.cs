@@ -1,14 +1,13 @@
 ﻿using System.Collections.Generic;
 using FluentAssertions;
-using NUnit.Framework;
 using PGS.DDD.Domain;
+using Xunit;
 
 namespace PGS.Wykop.Tests
 {
-    [TestFixture]
     public class AggregateRootTests
     {
-        [Test]
+        [Fact]
         public void Should_increment_version_when_events_are_applied()
         {
             // given
@@ -24,7 +23,7 @@ namespace PGS.Wykop.Tests
             baseRoot.Version.Should().Be(3);
         }
 
-        [Test]
+        [Fact]
         public void Applied_events_should_be_appended_to_changes()
         {
             // given
@@ -41,7 +40,7 @@ namespace PGS.Wykop.Tests
             baseRoot.Changes.Should().ContainItemsAssignableTo<TestPersonAR.NameChanged>();
         }
 
-        [Test]
+        [Fact]
         public void Empty_aggregate_root_version_should_be_0()
         {
             // given
@@ -52,7 +51,7 @@ namespace PGS.Wykop.Tests
             baseRoot.Version.Should().Be(0);
         }
 
-        [Test]
+        [Fact]
         public void Replaying_history_should_set_version()
         {
             // given
@@ -66,7 +65,7 @@ namespace PGS.Wykop.Tests
             baseRoot.Version.Should().Be(4);
         }
 
-        [Test]
+        [Fact]
         public void Replaying_history_should_apply_values()
         {
             // given
@@ -81,7 +80,7 @@ namespace PGS.Wykop.Tests
             ar.Surname.Should().Be("Zappa");
         }
 
-        [Test]
+        [Fact]
         public void Replaying_history_should_not_enqueue_changes()
         {
             // given

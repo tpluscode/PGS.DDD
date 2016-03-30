@@ -1,13 +1,12 @@
 ﻿using FluentAssertions;
-using NUnit.Framework;
 using PGS.DDD.Domain;
+using Xunit;
 
 namespace PGS.Wykop.Tests
 {
-    [TestFixture]
     public class EntityTests
     {
-        [Test]
+        [Fact]
         public void Entity_should_be_constructed_with_identiy()
         {
             // when
@@ -17,7 +16,7 @@ namespace PGS.Wykop.Tests
             entity.Id.Should().Be(10);
         }
 
-        [Test]
+        [Fact]
         public void Entities_with_same_Id_should_be_equal()
         {
             // when
@@ -25,11 +24,11 @@ namespace PGS.Wykop.Tests
             var entity2 = new TestEntity(10);
 
             // then
-            Assert.That(entity == entity2);
-            Assert.That(entity.Equals(entity2));
+            Assert.True(entity == entity2);
+            Assert.True(entity.Equals(entity2));
         }
 
-        [Test]
+        [Fact]
         public void Entities_with_different_Id_should_not_be_equal()
         {
             // when
@@ -37,8 +36,8 @@ namespace PGS.Wykop.Tests
             var entity2 = new TestEntity(11);
 
             // then
-            Assert.That(entity == entity2, Is.False);
-            Assert.That(entity.Equals(entity2), Is.False);
+            Assert.False(entity == entity2);
+            Assert.False(entity.Equals(entity2));
         }
 
         public class TestEntity : Entity<int>
