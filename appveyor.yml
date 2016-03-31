@@ -15,13 +15,14 @@ after_build:
   - .paket\paket.exe pack output nugets include-referenced-projects version %GitVersion_NuGetVersion%
   
 after_test:
-  - .\packages\OpenCover\tools\OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:"src\PGS.DDD.Tests\bin\Release\PGS.DDD.Tests.dll -noshadow -appveyor" -returntargetcode -filter:"+PGS.DDD* -PGS.DDD.Tests" -hideskipped:All -output:.\pgs.ddd_coverage.xml
+  - .\packages\OpenCover\tools\OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:"src\PGS.DDD.Tests\bin\Release\PGS.DDD.Tests.dll -noshadow -appveyor" -returntargetcode -filter:"+[PGS.DDD*]* -[PGS.DDD.Tests]*" -hideskipped:All -output:.\pgs.ddd_coverage.xml
   - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
   - pip install codecov
   - codecov -f "pgs.ddd_coverage.xml"
 
 artifacts:
   - path: 'nugets\*.nupkg'
+  - path: pgs.ddd_coverage.xml
 
 cache:
   - packages -> paket.lock
