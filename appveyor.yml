@@ -23,6 +23,13 @@ after_test:
 artifacts:
   - path: 'nugets\*.nupkg'
   - path: pgs.ddd_coverage.xml
+  
+deploy:
+  - provider: Environment
+    name: 'MyGet - PGS.DDD'
+    on:
+      branch: /v\d\.\d(\.\d)?/
+      appveyor_repo_tag: true
 
 cache:
   - packages -> paket.lock
