@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using PGS.DDD.Application;
 using PGS.DDD.Domain;
 
 namespace PGS.DDD.ServiceBus
