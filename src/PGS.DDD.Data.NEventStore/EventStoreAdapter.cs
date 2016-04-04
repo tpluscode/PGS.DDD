@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using NEventStore;
+using NEventStore.Persistence;
 using PGS.DDD.Data.EventSourced;
 using PGS.DDD.Domain;
 

@@ -68,4 +68,5 @@
     </When>
   </Choose>
   <Import Project="..\..$(__paket__GitVersionTask_targets).targets" Condition="Exists('..\..$(__paket__GitVersionTask_targets).targets')" Label="Paket" />
+  <Import Project="..\..\.paket\paket.targets" />
 </Project>

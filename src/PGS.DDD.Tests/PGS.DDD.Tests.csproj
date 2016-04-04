@@ -456,4 +456,5 @@
     </When>
   </Choose>
   <Import Project="..\..\packages\xunit.core\build\$(__paket__xunit_core_props).props" Condition="Exists('..\..\packages\xunit.core\build\$(__paket__xunit_core_props).props')" Label="Paket" />
+  <Import Project="..\..\.paket\paket.targets" />
 </Project>
