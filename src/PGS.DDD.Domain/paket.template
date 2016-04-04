@@ -3,8 +3,6 @@ id PGS.DDD.Domain
 include-pdbs true
 excludeddependencies
   GitVersionTask
-  ImpromptuInterface
-  Costura.Fody
 tags
   ddd eventsourcing eventstore
 copyright 
