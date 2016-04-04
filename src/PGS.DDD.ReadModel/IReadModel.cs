@@ -2,6 +2,8 @@
 {
     public interface IReadModel
     {
+        void Clear();
+
         void Save();
     }
 }
