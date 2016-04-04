@@ -47,3 +47,25 @@ public class BusinessPerson : AggregateRoot<PersonId>
   }
 }
 ```
+
+### PGS.DDD.Application
+
+This one should be referenced by Application services layer and contains base interfaces for their implementation:
+
+* `IEventPublisher`, `IEventHandler` - for working with domain events
+* `IServiceBus` - combines both above
+* `IIdConverter<TId>` - to convert domain ids into event stream identifiers
+
+### PGS.DDD.Data.EventSourced
+
+Implementation of an in-memory event store and a **repository** backed by events persisted to hard storage
+
+### PGS.DDD.Data.NEventStore
+
+An implementation of event store using *NEventStore*.
+
+### PGS.DDD.ServiceBus
+
+Basic, in-memory implementation of `IServiceBus`.
+
+
