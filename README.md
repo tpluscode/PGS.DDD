@@ -62,7 +62,7 @@ Implementation of an in-memory event store and a **repository** backed by events
 
 ### PGS.DDD.Data.NEventStore
 
-An implementation of event store using *NEventStore*.
+An implementation of event store using [NEventStore](https://github.com/NEventStore/NEventStore).
 
 ### PGS.DDD.ServiceBus
 
