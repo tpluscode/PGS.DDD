@@ -1,5 +1,4 @@
 ﻿type project
-id PGS.DDD.Data.EventSourced
 include-pdbs true
 excludeddependencies
   GitVersionTask

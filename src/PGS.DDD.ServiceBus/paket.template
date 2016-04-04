@@ -1,5 +1,4 @@
 ﻿type project
-id PGS.DDD.ServiceBus
 include-pdbs true
 excludeddependencies
   GitVersionTask

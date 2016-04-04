@@ -1,5 +1,4 @@
 ﻿type project
-id PGS.DDD.Domain
 include-pdbs true
 excludeddependencies
   GitVersionTask

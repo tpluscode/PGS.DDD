@@ -3,6 +3,6 @@ include-pdbs true
 excludeddependencies
   GitVersionTask
 tags
-  ddd eventsourcing eventstore
+  ddd cqrs readmodel
 copyright 
   Copyright 2016 PGS Software S.A.
