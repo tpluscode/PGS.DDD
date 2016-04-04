@@ -6,7 +6,7 @@ namespace PGS.DDD.Data.EventSourced
 {
     public class InMemoryEventStore : IEventStore
     {
-        readonly IDictionary<object, Queue<DomainEvent>> _eventStreams = new Dictionary<object, Queue<DomainEvent>>(); 
+        readonly IDictionary<string, Queue<DomainEvent>> _eventStreams = new Dictionary<string, Queue<DomainEvent>>();
 
         public IEnumerable<DomainEvent> GetEvents(string id)
         {
@@ -16,6 +16,14 @@ namespace PGS.DDD.Data.EventSourced
             }
 
             return Enumerable.Empty<DomainEvent>();
+        }
+
+        public IEnumerable<DomainEvent> GetEvents()
+        {
+            return from eventStream in _eventStreams
+                   from ev in eventStream.Value
+                   orderby ev.Date
+                   select ev;
         }
 
         public void AppendEvents(string id, IEnumerable<DomainEvent> changes)
