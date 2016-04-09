@@ -45,6 +45,8 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="EventHandlerExtensions.cs" />
+    <Compile Include="IReadModelBuilderFactoryOfT.cs" />
+    <Compile Include="IReadModelBuilderFactory.cs" />
     <Compile Include="IReadModelOfT.cs" />
     <Compile Include="IReadModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -2,8 +2,8 @@
 
 namespace PGS.DDD.ReadModel
 {
-    public interface IReadModel<in TDomainEvent> : IReadModel where TDomainEvent : DomainEvent
+    public interface IReadModelBuilder<in TDomainEvent> : IReadModelBuilder where TDomainEvent : DomainEvent
     {
-        void UpdateReadModel(TDomainEvent domainEvent);
+        void ApplyEvent(TDomainEvent domainEvent);
     }
 }

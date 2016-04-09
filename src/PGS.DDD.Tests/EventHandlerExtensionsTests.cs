@@ -1,6 +1,5 @@
 ﻿using System;
 using FakeItEasy;
-using PGS.DDD.Application;
 using PGS.DDD.Domain;
 using PGS.DDD.Eventing;
 using PGS.DDD.ReadModel;
@@ -15,8 +14,8 @@ namespace PGS.DDD.Tests
         {
             // given
             var eventHandler = A.Fake<IEventHandler>();
-            var readModel1 = A.Fake<IReadModel<TestEvent>>();
-            var readModel2 = A.Fake<IReadModel<TestEvent>>();
+            var readModel1 = A.Fake<IReadModelBuilderFactory<TestBuilder>>();
+            var readModel2 = A.Fake<IReadModelBuilderFactory<TestBuilder>>();
 
             // when
             eventHandler.AttachReadModelHandlers(readModel1, readModel2);
@@ -31,15 +30,16 @@ namespace PGS.DDD.Tests
             // given
             var testEvent = new TestEvent();
             var eventHandler = new TestHandler();
-            var readModel = A.Fake<IReadModel<TestEvent>>();
-            eventHandler.AttachReadModelHandlers(readModel);
+            var readModelBuilder = A.Fake<TestBuilder>();
+            var readModelBuilderFactory = new TestFactory(readModelBuilder);
+            eventHandler.AttachReadModelHandlers(readModelBuilderFactory);
 
             // when
             eventHandler.Handle(testEvent);
 
             // then
-            A.CallTo(() => readModel.UpdateReadModel(testEvent)).MustHaveHappened();
-            A.CallTo(() => readModel.Save()).MustHaveHappened();
+            A.CallTo(() => readModelBuilder.ApplyEvent(testEvent)).MustHaveHappened();
+            A.CallTo(() => readModelBuilder.Save()).MustHaveHappened();
         }
 
         private class TestHandler : IEventHandler
@@ -59,6 +59,29 @@ namespace PGS.DDD.Tests
 
         public class TestEvent : DomainEvent
         {
+        }
+
+        public class TestFactory : IReadModelBuilderFactory<TestBuilder>
+        {
+            private readonly TestBuilder _readModelBuilder;
+
+            public TestFactory(TestBuilder readModelBuilder)
+            {
+                _readModelBuilder = readModelBuilder;
+            }
+
+            public TestBuilder Create()
+            {
+                return _readModelBuilder;
+            }
+        }
+
+        public abstract class TestBuilder : IReadModelBuilder<TestEvent>, IDisposable
+        {
+            public abstract void ApplyEvent(TestEvent domainEvent);
+            public abstract void Clear();
+            public abstract void Save();
+            public abstract void Dispose();
         }
     }
 }

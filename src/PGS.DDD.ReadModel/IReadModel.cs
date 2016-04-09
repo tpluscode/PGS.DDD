@@ -1,6 +1,6 @@
 ﻿namespace PGS.DDD.ReadModel
 {
-    public interface IReadModel
+    public interface IReadModelBuilder
     {
         void Clear();
 
