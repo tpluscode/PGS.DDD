@@ -35,17 +35,12 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="CommandResult.cs" />
-    <Compile Include="IIdConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PGS.DDD.Domain\PGS.DDD.Domain.csproj">
       <Project>{049dc5f0-737d-47fd-92d7-3f2a62f22bb6}</Project>
       <Name>PGS.DDD.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PGS.DDD.Eventing\PGS.DDD.Eventing.csproj">
-      <Project>{B815B98A-BE5D-486D-A961-CF8F325BA51B}</Project>
-      <Name>PGS.DDD.Eventing</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

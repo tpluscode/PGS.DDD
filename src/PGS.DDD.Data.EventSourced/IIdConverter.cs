@@ -1,4 +1,4 @@
-﻿namespace PGS.DDD.Application
+﻿namespace PGS.DDD.Data.EventSourced
 {
     public interface IIdConverter<TId>
     {

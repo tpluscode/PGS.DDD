@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using PGS.DDD.Application;
 using PGS.DDD.Domain;
 
 namespace PGS.DDD.Data.EventSourced

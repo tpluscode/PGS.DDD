@@ -45,15 +45,12 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="IEventStore.cs" />
+    <Compile Include="IIdConverter.cs" />
     <Compile Include="InMemoryEventStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PGS.DDD.Application\PGS.DDD.Application.csproj">
-      <Project>{8E9C304C-A21A-455B-8A2A-B41A2BE63AB2}</Project>
-      <Name>PGS.DDD.Application</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PGS.DDD.Domain\PGS.DDD.Domain.csproj">
       <Project>{049DC5F0-737D-47FD-92D7-3F2A62F22BB6}</Project>
       <Name>PGS.DDD.Domain</Name>
