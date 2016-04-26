@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using FluentAssertions;
+using PGS.DDD.Data.EventSourced;
 using PGS.DDD.Domain;
 using Xunit;
 
@@ -56,7 +57,7 @@ namespace PGS.DDD.Tests
         {
             // given
             var ar = new TestPersonAR(1);
-            IAggregateRoot baseRoot = ar;
+            IEventSourcedAggregateRoot baseRoot = ar;
 
             // when
             baseRoot.ReplayChanges(History);
@@ -70,7 +71,7 @@ namespace PGS.DDD.Tests
         {
             // given
             var ar = new TestPersonAR(1);
-            IAggregateRoot baseRoot = ar;
+            IEventSourcedAggregateRoot baseRoot = ar;
 
             // when
             baseRoot.ReplayChanges(History);
@@ -84,7 +85,7 @@ namespace PGS.DDD.Tests
         public void Replaying_history_should_not_enqueue_changes()
         {
             // given
-            IAggregateRoot baseRoot = new TestPersonAR(1);
+            IEventSourcedAggregateRoot baseRoot = new TestPersonAR(1);
 
             // when
             baseRoot.ReplayChanges(History);

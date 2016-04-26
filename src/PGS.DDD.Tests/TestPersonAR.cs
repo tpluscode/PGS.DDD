@@ -1,4 +1,5 @@
-﻿using PGS.DDD.Domain;
+﻿using PGS.DDD.Data.EventSourced;
+using PGS.DDD.Domain;
 
 namespace PGS.DDD.Tests
 {

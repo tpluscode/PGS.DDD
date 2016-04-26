@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using ImpromptuInterface;
+using PGS.DDD.Domain;
 
-namespace PGS.DDD.Domain
+namespace PGS.DDD.Data.EventSourced
 {
-    public abstract class AggregateRoot<TId> : Entity<TId>, IAggregateRoot
+    public abstract class AggregateRoot<TId> : Entity<TId>, IEventSourcedAggregateRoot
     {
         private readonly Queue<DomainEvent> _changes = new Queue<DomainEvent>();
         private int _version;
@@ -34,7 +35,7 @@ namespace PGS.DDD.Domain
             _version++;
         }
 
-        void IAggregateRoot.ReplayChanges(IEnumerable<DomainEvent> pastEvents)
+        void IEventSourcedAggregateRoot.ReplayChanges(IEnumerable<DomainEvent> pastEvents)
         {
             foreach (var pastEvent in pastEvents)
             {

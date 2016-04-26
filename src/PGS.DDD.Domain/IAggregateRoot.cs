@@ -7,7 +7,5 @@ namespace PGS.DDD.Domain
         int Version { get; }
 
         IEnumerable<DomainEvent> Changes { get; }
-
-        void ReplayChanges(IEnumerable<DomainEvent> pastEvents);
     }
 }

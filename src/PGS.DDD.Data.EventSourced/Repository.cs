@@ -4,7 +4,7 @@ using PGS.DDD.Domain;
 
 namespace PGS.DDD.Data.EventSourced
 {
-    public class Repository<T, TId> : IRepository<T, TId> where T : IAggregateRoot, IEntity<TId>
+    public class Repository<T, TId> : IRepository<T, TId> where T : IEventSourcedAggregateRoot, IEntity<TId>
     {
         private readonly IEventStore _eventStore;
         private readonly IIdConverter<TId> _converter;
